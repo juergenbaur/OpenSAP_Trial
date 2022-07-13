@@ -50,7 +50,7 @@ CLASS zju_generate_demo_data_ju IMPLEMENTATION.
   " INSERT BOOKING DEMO DATA
      INSERT ZJU_ABOOK_JU FROM ( SELECT
    FROM /dmo/booking as booking
-   join zrap_atrav_001 as z
+   join ZJU_ATRAV_JU as z
    on booking~travel_id = z~travel_id
    fields
 " --------INSERT TRAVEL DEMO DATA
