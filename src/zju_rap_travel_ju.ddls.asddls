@@ -7,7 +7,7 @@
     sizeCategory: #S,
     dataClass: #MIXED
 }
-define root view entity ZJU_RAP_Travel_JU as select from zju_atrav_ju 
+define root view entity ZJU_RAP_Travel_JU as select from zju_atrav_ju as Travel
    composition [0..*] of ZJU_RAP_Booking_JU as _Booking  
    association [0..1] to /DMO/I_Agency       as _Agency   on $projection.AgencyID = _Agency.AgencyID
    association [0..1] to /DMO/I_Customer     as _Customer on $projection.CustomerID = _Customer.CustomerID

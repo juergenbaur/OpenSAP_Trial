@@ -7,7 +7,7 @@
     sizeCategory: #S,
     dataClass: #MIXED
 }
-define view entity ZJU_RAP_Booking_JU as select from zju_abook_ju
+define view entity ZJU_RAP_Booking_JU as select from zju_abook_ju as Booking
    association to parent ZJU_RAP_Travel_JU        as _Travel     on  $projection.TravelUUID = _Travel.TravelUUID
    
    association [1..1] to /DMO/I_Customer           as _Customer   on  $projection.CustomerID   = _Customer.CustomerID
